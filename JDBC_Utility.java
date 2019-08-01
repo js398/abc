@@ -7,8 +7,8 @@ public class JDBC_Utility{
     try
     {
       Class.forName("com.mysql.jdbc.Driver").newInstance();
-      String url = "jdbc:mysql://mysql.cms.waikato.ac.nz/sw239";
-      conn = DriverManager.getConnection(url, "sw239", "my10920350sql");
+      String url = "jdbc:mysql://localhost/js398";
+      conn = DriverManager.getConnection(url, "root", "root");
     }
     catch (ClassNotFoundException ex) {System.err.println(ex.getMessage());}
     catch (IllegalAccessException ex) {System.err.println(ex.getMessage());}
